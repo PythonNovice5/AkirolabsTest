@@ -1,0 +1,8 @@
+04:35:42.730 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 117.0.5938.92 (resolved driver for Chrome 117)
+04:35:42.771 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Eshant\.cache\selenium\chromedriver\win64\117.0.5938.92\chromedriver.exe
+04:35:46.460 [main] INFO  test.java.tests.GoogleSearchTest - Opened the url: https://www.google.com/en
+04:35:47.243 [main] INFO  test.java.tests.GoogleSearchTest - Searching a phrase: Best mobile phones 2021
+04:35:50.032 [main] INFO  test.java.tests.GoogleSearchTest - Verified that the search results appeared for the searched phrase
+04:35:57.126 [main] INFO  test.java.tests.GoogleSearchTest - Clicked on the first Ad-Free link
+04:35:57.148 [main] INFO  test.java.tests.GoogleSearchTest - Verified that the correct URL opened for the searched phrase 
+04:35:57.175 [main] INFO  test.java.tests.GoogleSearchTest - The searched phrase Best mobile phones 2021 was found in the webpage opened
