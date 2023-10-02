@@ -3,6 +3,8 @@
   <groupId>AkirolabsTest</groupId>
   <artifactId>AkirolabsTest</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+ 
+
   <build>
     <sourceDirectory>src</sourceDirectory>
     <plugins>
@@ -12,8 +14,9 @@
       
         <artifactId>maven-compiler-plugin</artifactId>
         <version>3.8.1</version><configuration>
-          <release>15</release>
+          <release>15</release>          
         </configuration>
+        
       </plugin>
        <plugin>
             <groupId>org.apache.maven.plugins</groupId>
@@ -28,7 +31,7 @@
     <groupId>org.testng</groupId>
     <artifactId>testng</artifactId>
     <version>7.8.0</version>
-    <scope>test</scope>
+    <scope>compile</scope>
 </dependency>
 <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
 <dependency>

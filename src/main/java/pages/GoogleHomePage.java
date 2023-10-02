@@ -19,7 +19,13 @@ public class GoogleHomePage extends BasePage {
      
 	public void openURL(String url) {
 		driver.get(url);
-        waitAndClickWebElement(rejectAll);              
+		try {
+			waitAndClickWebElement(rejectAll);  
+		}
+		catch(Exception e) {
+			logger.info("The cookies pop up did not appear");
+		}
+                    
     }
 
     public void search(String searchTerm) {

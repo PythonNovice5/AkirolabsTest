@@ -4,7 +4,6 @@ package main.java.pages;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
-
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class Driver {
@@ -12,6 +11,10 @@ public class Driver {
     private static WebDriver driver;
 
     public static WebDriver getDriver() {
+    
+    	String headless = System.getProperty("headless", "false");
+    	
+        
         if (driver == null) { 
         	ChromeOptions options = new ChromeOptions();
             options.addArguments("--disable-notifications"); // Disable notifications (optional)
@@ -25,6 +28,10 @@ public class Driver {
             options.addArguments("--disable-plugins-discovery");
             options.addArguments("--disable-plugins");
             options.addArguments("--disable-blink-features=BlockCredentialedSubresources");
+            if (Boolean.parseBoolean(headless)) {
+                options.addArguments("--headless");
+            }
+
             WebDriverManager.chromedriver().setup(); // Automatically downloads and sets up ChromeDriver
             driver = new ChromeDriver(options);
         }
