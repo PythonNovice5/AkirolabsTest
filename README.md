@@ -65,27 +65,39 @@ Before you begin, make sure you have the following installed:
 
   **1. Running via maven command on Windows/Linux** 
   
-  ```   mvn test   ```
+  ```
+  mvn test
+  ```
 
   **2. Running via maven command on Windows/Linux as HeadLess browser**
   
-  ```   mvn test -Dheadless=true   ```
+  ```
+  mvn test -Dheadless=true
+  ```
   
   **3. Running the test using .bat file on Windows**
 
- ```   run_test.bat   ```
+ ```
+ run_test.bat
+ ```
 
  **4. Running test using .bat file on Windows as Headless browser**
  
- ```   run_test.bat -Dheadless=true   ```
+ ```
+ run_test.bat -Dheadless=true
+ ```
 
  **5. Running a test using .sh file on Linux**
 
- ```   ./run_test.sh   ```
+ ```  
+ ./run_test.sh
+ ```
 
  **6. Running a test using .sh file on Linux as Headless browser**
  
- ```   ./run_test.sh -Dheadless=true   ```  
+ ```   
+ ./run_test.sh -Dheadless=true
+ ```  
 
 ## Logging
 
