@@ -26,10 +26,11 @@ public class Driver {
             options.addArguments("--disable-cookies");
             options.addArguments("--disable-extensions");
             options.addArguments("--disable-plugins-discovery");
-            options.addArguments("--disable-plugins");
+            options.addArguments("--disable-plugins");            
             options.addArguments("--disable-blink-features=BlockCredentialedSubresources");
             if (Boolean.parseBoolean(headless)) {
                 options.addArguments("--headless");
+                options.addArguments("--no-sandbox");
             }
 
             WebDriverManager.chromedriver().setup(); // Automatically downloads and sets up ChromeDriver

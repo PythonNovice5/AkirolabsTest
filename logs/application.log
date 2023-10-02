@@ -80,3 +80,27 @@ java.net.SocketException: Connection reset
 18:44:20.254 [main] INFO  test.java.tests.GoogleSearchTest - Clicked on the first Ad-Free link
 18:44:20.268 [main] INFO  test.java.tests.GoogleSearchTest - Verified that the correct URL opened for the searched phrase 
 18:44:20.281 [main] INFO  test.java.tests.GoogleSearchTest - The searched phrase Best mobile phones 2021 was found in the webpage opened
+19:36:12.868 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 117.0.5938.92 (resolved driver for Chrome 117)
+19:36:12.898 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Eshant\.cache\selenium\chromedriver\win64\117.0.5938.92\chromedriver.exe
+19:36:16.638 [main] INFO  test.java.tests.GoogleSearchTest - Opened the url: https://www.google.com/en
+19:36:17.124 [main] INFO  test.java.tests.GoogleSearchTest - Searching a phrase: Best mobile phones 2021
+19:36:18.475 [main] INFO  test.java.tests.GoogleSearchTest - Verified that the search results appeared for the searched phrase
+19:36:19.935 [main] INFO  test.java.tests.GoogleSearchTest - Clicked on the first Ad-Free link
+19:36:19.950 [main] INFO  test.java.tests.GoogleSearchTest - Verified that the correct URL opened for the searched phrase 
+19:36:19.965 [main] INFO  test.java.tests.GoogleSearchTest - The searched phrase Best mobile phones 2021 was found in the webpage opened
+19:36:19.990 [AsyncHttpClient-1-4] WARN  o.a.netty.handler.WebSocketHandler - onError
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:254)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:357)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:833)
