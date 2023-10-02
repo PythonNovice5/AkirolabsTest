@@ -1,6 +1,6 @@
 # Automated End-to-End Test for Google Search
 
-This repository contains an automated end-to-end test for Google Search using TestNG, Selenium, Java, and Maven.
+This repository contains an automated end-to-end test for Google Search using TestNG, Selenium, Java, and Maven. The test can run on Windows and Linux environments in both original and headless forms.
 
 ## Test Description
 
@@ -43,16 +43,16 @@ To get started with this project, follow the instructions below
 
 Before you begin, make sure you have the following installed:
 
-- Java 11 or higher
-- Maven
+- Java 17 or higher
+- Maven 3.8.6 or higher
 - Chrome browser
 - Git
 
 ### Installation
-- Download and install the latest version of [Java](https://www.java.com/download/ie_manual.jsp) available and make sure the system environmental variable points to it
-- Download and install the latest version of [Maven](https://maven.apache.org/download.cgi) available and make sure the system environmental variable points to it
+- Download and install [Java](https://www.java.com/download/ie_manual.jsp) available and make sure the system environmental variable points to it
+- Download and install [Maven](https://maven.apache.org/download.cgi) available and make sure the system environmental variable points to it
 - Download and install the latest version of [Chrome Browser](https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwjug5KTpNeBAxUUp9UKHVE8BnQYABAAGgJ3cw&ase=2&gclid=Cj0KCQjw1OmoBhDXARIsAAAYGSHujsSoTwk0H1G7RgC-1Pt3qm6gKJ5Kq07F8MZ9crllSjTjT6n--GMaAiCoEALw_wcB&ei=e6waZYeqK46Fxc8P6JCxmAE&ohost=www.google.com&cid=CAESV-D2_-jWE4O2wHQzNOFVTiBHSdK3zxPb9VpJaB9TTTT0T-UU1wLVcYhH7kAx_vYPoWrWIsXMohwDB20guWl4a2rdIllyOs6d_u2VxSxRDhyggFpbHO02ww&sig=AOD64_3zvyT3UcU2AemBlSRNSMyyog_BNQ&q&sqi=2&nis=4&adurl&ved=2ahUKEwjH04qTpNeBAxWOQvEDHWhIDBMQ0Qx6BAgNEAE)
-- Download and install the latest version of [Git]([https://maven.apache.org/download.cgi](https://git-scm.com/downloads)) available and make sure the system environmental variable points to it
+- Download and install the latest version of [Git](https://git-scm.com/downloads) available and make sure the system environmental variable points to it
 
 ## Usage
 
@@ -68,17 +68,26 @@ Before you begin, make sure you have the following installed:
   **1. Running via maven command on Windows/Linux** 
   
   ```  mvn test```
+
+  **2. Running via maven command on Windows/Linux as HeadLess browser**
   
-  **2. Running the test using .bat file on Windows**
-
-  ```  run_test.bat```
+  ```mvn test -Dheadless=true```
   
+  **3. Running the test using .bat file on Windows**
 
-  **3. Running the test using .sh file on Linux**
+ ```  run_test.bat```
 
-  `chmod +x run_test.sh` (Execute this just once for the first time to give executable permissions to the file )  
+ **4. Running test using .bat file on Windows as Headless browser**
+ 
+ ```run_test.bat -Dheadless=true```
 
-  ```./run_test.sh```
+ **5. Running a test using .sh file on Linux**
+
+ ``` run_test.sh ```
+
+ **6. Running a test using .sh file on Linux as Headless browser**
+ 
+ ``` run_test.sh -Dheadless=true ```  
 
 ## Logging
 
